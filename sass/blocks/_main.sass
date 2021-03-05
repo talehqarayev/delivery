@@ -1,0 +1,140 @@
+.header
+    background: url(../img/background-min.png) center (center / cover) no-repeat
+    height: 680px
+    padding: 25px 0 80px 0
+    &_logo
+        cursor: pointer
+        img
+            max-width: 80px
+            max-height: 80px
+    &_menu
+        display: flex
+        justify-content: space-around
+        align-items: center
+        .menu
+            display: flex
+            justify-content: space-between
+            align-items: center
+            padding: 0
+            margin: 0
+            &_item
+                padding: 10px
+                list-style-type: none
+                a
+                    color: white
+                    font-size: 14px
+                    position: relative
+                    &:hover
+                        color: $main-color
+                        text-decoration: underline 
+
+                    /* Menyunun arasindaki xetler */
+                        
+                   /* &::after
+                        content: ""
+                        height: 20px
+                        position: absolute
+                        border: 1px white dotted
+                        left: -12px */
+
+    &_feedback
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-left: 0px
+        .feedback_number
+            color: white
+            display: flex
+            flex-direction: column
+            align-items: flex-end
+            justify-content: center
+            margin-right: 20px
+            font-size: 13px
+            a
+                color: white
+                font-size: 15px
+                font-weight: 500
+                text-decoration: none
+
+    &_wrapper
+        color: white
+        margin: 0 auto
+        text-align: center
+        font-weight: 200
+        p
+            font-size: 23px
+            margin: 0
+            padding: 0
+
+    h1
+        color: $main-color
+        font-size: 64px
+        margin: 0
+        padding: 0
+        font-weight: 500
+
+    &_subheader
+        color: white
+        font-size: 38px
+        font-weight: 300
+
+    &_ellipse
+        display: flex
+        justify-content: space-between
+        align-items: center
+        position: relative
+        margin-top: 30px
+        width: 8px
+        height: 8px
+        background-color: white
+        border-radius: 50px
+        border: none
+        text-align: center
+        &::before
+            content: ""
+            background-color: white
+            width: 400px
+            height: 1px
+            position: absolute
+            left: 20px
+        &::after
+            content: ""
+            background-color: white
+            width: 400px
+            height: 1px
+            position: absolute
+            right: 20px
+
+    &_icons
+        margin-top: 35px
+        display: flex
+        justify-content: space-around
+        align-items: flex-start
+        font-size: 13px
+        font-weight: 300
+        text-align: center
+
+        .icon
+            width: 240px
+            &_img
+                width: 55px
+                height: 55px
+                margin: 0 auto
+                img
+                    max-width: 55px
+                    max-height: 55px  
+            &_text
+                margin-top: 15px
+
+    .wrapper_btn 
+        @include btn
+        margin-top: 50px
+        width: 230px
+        height: 55px
+        border-radius: 50px
+        font-size: 15px 
+        font-weight: 500
+ 
+    &_btn
+        @include btn
+

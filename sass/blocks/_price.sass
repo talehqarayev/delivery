@@ -1,0 +1,124 @@
+.price
+    min-height: 800px
+    padding: 50px 0 50px 0
+    &_header
+        position: relative
+        text-transform: uppercase
+        font-weight: 500
+        text-align: center
+        font-size: 22px
+        &::after
+            content: ""
+            background-color: $main-color
+            width: 150px
+            text-align: center
+            height: 1px
+            position: absolute
+            top: 50px
+            left: 50%
+            transform: translate(-50%, 50%)
+    &_subheader
+        font-size: 16px
+        text-align: center
+        margin-top: 30px
+        font-weight: 300
+    &_item
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-top: 40px
+        .item
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            width: 225px
+            padding: 0px 10px 20px 10px
+            border: 1px solid #e9e9e9
+            &_header
+                width: 225px
+                height: 65px
+                background-color: #25333c
+                display: flex
+                justify-content: center
+                align-items: center
+                h3
+                    color: white
+                    text-align: center
+                    font-weight: 300
+                    text-transform: uppercase
+                    padding: 0
+                    margin: 0
+                    font-size: 16px
+            &_adds
+                margin-top: 20px
+                display: flex
+                flex-direction: column
+                justify-content: center
+                align-items: center
+            &_img
+                font-size: 13px
+                display: flex
+                flex-direction: column
+                justify-content: center
+                align-items: center
+                img
+                    max-width: 40px
+                    max-height: 40px
+                    margin-bottom: 10px
+                .img_text
+                    color: $main-color
+                    text-transform: uppercase
+                    font-size: 19px
+                    font-weight: 500
+            &_text
+                margin-top: 20px
+                font-size: 13px
+                text-align: center
+            &_btn
+                @include btn
+                margin-top: 25px
+                width: 160px
+    
+    &_consultation
+        margin-top: 60px
+        text-align: center
+
+        .consultation_subheader
+            font-size: 22px
+            font-weight: 500
+            text-transform: uppercase
+
+        .consultation_img
+            width: 105px
+            height: 105px
+            margin: 0 auto
+            margin-top: 30px
+            display: inline
+            img
+                max-height: 105px
+                max-width: 105px
+
+        .consultation_form
+            margin-top: 15px
+            input
+                padding: 5px
+                border-radius: 20px
+                border: 2px solid #e9e9e9
+                outline: none
+                width: 275px
+                height: 50px
+            fieldset
+                border: 2px solid #e9e9e9
+                legend
+                    width: auto
+                    padding-left: 15px
+                    padding-right: 15px
+        .consultation_btn
+            @include btn
+            margin-top: 35px
+            width: 230px
+            height: 55px
+            border-radius: 50px
+            font-size: 15px 
+            font-weight: 500 

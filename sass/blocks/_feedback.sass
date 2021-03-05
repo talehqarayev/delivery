@@ -1,0 +1,47 @@
+.feedback
+    background: url("../img/background-4.png") center (center / cover) no-repeat
+    height: 450px
+    padding: 60px 0 60px 0
+    &_header
+        height: 70px
+        background-color: #25333c
+        color: white
+        text-transform: uppercase
+        font-weight: 600
+        text-align: center
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        p
+            margin: 0
+            padding: 0
+            font-size: 15px
+            font-weight: 500
+
+    &_form
+        background-color: rgba(225,222,215 ,0.7)
+        min-height: 250px
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-wrap: wrap
+        padding: 20px 0 25px 0
+        input
+            width: 260px
+            margin: 8px
+            border-radius: 20px
+            border: none
+            height: 45px
+            outline: none
+        textarea
+            margin-top: 10px
+            border-radius: 20px
+            resize: none
+            border: none
+            outline: none
+
+    &_btn
+        @include btn
+        margin-top: 20px
+        width: 180px

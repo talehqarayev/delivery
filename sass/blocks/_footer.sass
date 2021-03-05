@@ -1,0 +1,72 @@
+.footer
+    background-color: #25333c
+    min-height: 230px
+    padding: 30px 0 30px 0
+    &_top
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &_logo
+        height: 70px
+        display: flex
+        justify-content: center
+        align-items: center
+        img
+            max-width: 70px
+            max-height: 70px
+    &_text
+        margin-left: 40px
+        font-size: 14px
+        color: white
+    &_recall
+        display: flex
+        align-items: center
+    &_number
+        display: flex
+        flex-direction: column
+        align-items: flex-end
+        color: white
+    &_question
+        font-size: 14px
+        font-weight: 300
+    &_phone
+        font-size: 18px
+        font-weight: 500
+    &_btn
+        @include btn
+        margin-left: 20px
+    
+
+    &_line
+        margin-top: 40px
+        border: 1px solid#677177
+        border-bottom: 0px
+
+    &_wrapper
+        margin-top: 50px
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &_by
+        color: white
+        font-size: 12px
+        
+    &_link
+        a
+            color: $main-color
+            font-size: 12px
+            &:hover
+                text-decoration: underline
+    &_created
+        color: white
+        font-size: 12px
+        font-weight: 300
+        display: flex
+        align-items: center
+        justify-content: center
+        .created_icon
+            width: 35px
+            height: 35px
+            img
+                margin-left: 10px
+                max-height: 35px
