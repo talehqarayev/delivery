@@ -1,4 +1,34 @@
 .map
-    min-height: 400px
-    background: url(../img/map-min.png) center (center / cover) no-repeat
-    
+    position: relative
+    &_info
+        position: absolute
+        top: 25%
+        left: 53%
+    &_address
+        color: black
+        width: 310px
+        height: 160px
+        background-color: white
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: flex-start
+        padding: 20px
+        border-radius: 5px
+    &_city
+        font-size: 15px
+        color: $main-color
+    &_text
+        font-size: 15px
+
+    &_connection
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        justify-content: center
+    &_email
+        a
+            color: $main-color
+            &:hover
+                text-decoration: underline
+                
