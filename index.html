@@ -34,7 +34,7 @@
                         Есть вопросы?
                         <a href="tel:+7 (926) 423 01 00 "> +7 (926) 423 01 00 </a>
                     </div>
-                    <button class="header_btn"> Перезвоните мне </button>
+                    <button data-modal="recall" class="header_btn"> Перезвоните мне </button>
                 </div>
             </nav>
 
@@ -665,7 +665,7 @@
                         <div class="footer_question">Есть вопросы?</div>
                         <a href="tel:+7 (926) 423 01 00" class="footer_phone">+7 (926) 423 01 00</a>
                     </div>
-                    <button class="footer_btn">Перезвоните мне</button>
+                    <button data-modal="recall" class="footer_btn">Перезвоните мне</button>
                 </div>
 
             </div>
@@ -695,11 +695,21 @@
 
 
 
-
-
     <a href="#up" class="pageup">
         <img src="icons/up.svg" alt="">
     </a>
+
+<div class="overlay">
+    <div class="modal" id="recall">
+        <div class="modal_close">&times;</div>
+        <div class="modal_header"> Ваш номер, пожалуйста!</div>
+        <form action="#" class="modal_form">
+            <input type="text" name="name" id="" required placeholder="Введите, свой номер">
+            <input type="num" name="phone" id="" required placeholder="Как к Вам обращаться">
+            <button class="modal_btn"> Отправить </button>
+        </form>
+    </div>
+</div>
 
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>

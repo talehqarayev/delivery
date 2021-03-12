@@ -25,4 +25,16 @@ $(document).ready(function(){
       return false;
     });
 
+    // MODAL WINDOW
+
+    $("[data-modal=recall]").on("click", function() {
+
+      $(".overlay, #recall").fadeIn("fast");
+      });
+  
+      $(".modal_close").on("click", function() {
+  
+      $(".overlay, #recall").fadeOut("fast");
+      });
+
 });
