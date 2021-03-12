@@ -38,3 +38,13 @@ $(document).ready(function(){
       });
 
 });
+
+
+let heading = document.querySelector(".advantage_header");
+    heading.addEventListener("mouseover", function(){
+    heading.style.color = "red";
+    });
+
+    heading.addEventListener("mouseleave", function(){
+      heading.style.color = "black";
+      });
