@@ -40,6 +40,10 @@ $(document).ready(function(){
 });
 
 
+
+// КАК РАБОТАТЬ С DOM в РЕАЛЬНЫХ ПРОЕКТАХ
+
+/* 
 let heading = document.querySelector(".advantage_header");
     heading.addEventListener("mouseover", function(){
     heading.style.color = "red";
@@ -48,3 +52,16 @@ let heading = document.querySelector(".advantage_header");
     heading.addEventListener("mouseleave", function(){
       heading.style.color = "black";
       });
+    
+let icon = document.querySelector(".agency_icon");
+
+    icon.addEventListener("mouseover", function() {
+      icon.style.background = "black";
+      icon.style.borderRadius = "80px";
+      icon.style.textAlign = "center";
+    });
+    icon.addEventListener("mouseleave", function() {
+      icon.style.background = "#ff2600";
+    });
+ */
+
