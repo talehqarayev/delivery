@@ -171,7 +171,7 @@
 
     .header
         padding: 25px 0 25px 0
-        height: 550px
+        min-height: 550px
         &_logo
             img
                 max-width: 55px
@@ -186,7 +186,7 @@
                 top: 0
                 left: -100%
                 width: 50%
-                height: 70vh
+                height: 75vh
                 padding: 20px 15px
                 z-index: 1
                 background-color: rgba(37,51,60,0.8)
@@ -316,4 +316,131 @@
             display: none
 
 
-/** @media (max-width:576px) 
+@media (max-width: 576px)
+
+    .header
+        padding: 25px 0 50px 0
+        height: 400px      
+        &_ellipse::after
+            content: ""
+            background-color: white
+            width: 140px
+            height: 1px
+            position: absolute
+            right: 20px
+        &_ellipse::before
+            content: ""
+            background-color: white
+            width: 140px
+            height: 1px
+            position: absolute
+            right: 20px
+
+        &_logo
+            img
+                max-width: 50px
+                max-height: 50px
+        &_btn
+            width: 110px
+            height: 35px
+            font-size: 9px
+            margin: 0 auto
+        &_wrapper
+            margin-top: 30px
+            p
+                font-size: 16px
+            h1
+                font-size: 24px
+        &_subheader
+            font-size: 14px
+        &_icons
+            display: none
+    .advantage_item
+        .item
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            &_adds
+                display: flex
+                flex-direction: column
+                justify-content: center
+                align-items: center
+            &_text
+                text-align: center
+    .advantage_header
+        font-size: 15px
+    .work_header
+        font-size: 15px
+    .work_item
+        .item
+            img
+                max-height: 250px
+                max-width: 250px
+    .price_header
+        font-size: 15px
+        &::after
+            content: ""
+            background-color: #ec644b
+            width: 150px
+            text-align: center
+            height: 1px
+            position: absolute
+            top: 40px
+            left: 50%
+            transform: translate(-50%,50%)
+    .price_consultation
+        .consultation_subheader
+            font-size: 16px
+    .manager_subheader
+        font-size: 15px
+    textarea
+        width: 300px
+    .map
+        &_info
+            position: absolute
+            top: 0%
+            left: 0%
+        &_address
+            width: 320px
+            height: 120px
+        &_text
+            font-size: 13px
+
+    .footer_top
+        display: flex
+        align-items: center
+        justify-content: space-around
+        .footer_text
+            display: none
+    .footer_wrapper
+        display: flex
+        flex-direction: column
+        align-items: center
+    
+    .pageup
+        position: fixed
+        width: 60px
+        height: 60px
+        right: 20px
+        bottom: 40px
+    
+    .overlay
+        .modal
+            width: 270px
+            min-height: 220px
+            padding: 15px 10px
+            &_header
+                font-size: 16px
+            &_form
+                input
+                    width: 230px
+                    height: 35px
+                label
+                    font-size: 10px
+            &_btn
+                margin-top: 5px
+                width: 110px
+                height: 35px
+            &_close
+                right: -20px
