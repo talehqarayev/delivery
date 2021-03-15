@@ -171,12 +171,15 @@
 
     .header
         padding: 25px 0 25px 0
-        min-height: 550px
+        height: 550px
         &_logo
             img
                 max-width: 55px
                 max-height: 55px
         &_menu
+            display: flex
+            justify-content: space-around
+            align-items: center
             .menu
                 position: fixed
                 display: flex
@@ -186,7 +189,7 @@
                 top: 0
                 left: -100%
                 width: 50%
-                height: 75vh
+                height: 100vh
                 padding: 20px 15px
                 z-index: 1
                 background-color: rgba(37,51,60,0.8)
@@ -320,7 +323,7 @@
 
     .header
         padding: 25px 0 50px 0
-        height: 400px      
+        height: 420px      
         &_ellipse::after
             content: ""
             background-color: white
@@ -348,7 +351,7 @@
         &_wrapper
             margin-top: 30px
             p
-                font-size: 16px
+                font-size: 15px
             h1
                 font-size: 24px
         &_subheader
@@ -370,8 +373,12 @@
                 text-align: center
     .advantage_header
         font-size: 15px
+    .agency_subheader
+        font-size: 12px
     .work_header
         font-size: 15px
+    .work_subheader
+        font-size: 12px
     .work_item
         .item
             img
@@ -391,9 +398,9 @@
             transform: translate(-50%,50%)
     .price_consultation
         .consultation_subheader
-            font-size: 16px
+            font-size: 15px
     .manager_subheader
-        font-size: 15px
+        font-size: 13px
     textarea
         width: 300px
     .map
@@ -406,6 +413,13 @@
             height: 120px
         &_text
             font-size: 13px
+    .manager
+        padding: 60px 0 35px 0
+    
+    .feedback_btn
+        width: 140px
+        height: 40px
+        font-size: 11px
 
     .footer_top
         display: flex
@@ -417,7 +431,8 @@
         display: flex
         flex-direction: column
         align-items: center
-    
+    .footer_btn
+        width: 125px
     .pageup
         position: fixed
         width: 60px
