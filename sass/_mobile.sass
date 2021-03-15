@@ -285,9 +285,24 @@
         .feedback_btn
             width: 150px
             height: 40px
-
-    .map_address
-        width: 273px
+    .map
+        position: relative
+        padding: 0
+        &_info
+            position: absolute
+            top: 25%
+            left: 53%
+        &_address
+            color: black
+            width: 270px
+            height: 160px
+            background-color: white
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: flex-start
+            padding: 20px
+            border-radius: 5px
 
     .footer_top
         .footer_logo
