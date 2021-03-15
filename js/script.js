@@ -37,8 +37,28 @@ $(document).ready(function(){
       $(".overlay, #recall").fadeOut("fast");
       });
 
-});
 
+    // HAMBURGER MENU SCRIPT
+
+    const menu = document.querySelector('.menu'),
+    menuItem = document.querySelectorAll('.menu_item'),
+    hamburger = document.querySelector('.hamburger');
+
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('hamburger_active');
+        menu.classList.toggle('menu_active');
+    });
+
+    menuItem.forEach(item => {
+        item.addEventListener('click', () => {
+            hamburger.classList.toggle('hamburger_active');
+            menu.classList.toggle('menu_active');
+      
+        });
+    });
+
+
+});
 
 
 // КАК РАБОТАТЬ С DOM в РЕАЛЬНЫХ ПРОЕКТАХ
@@ -64,4 +84,3 @@ let icon = document.querySelector(".agency_icon");
       icon.style.background = "#ff2600";
     });
  */
-

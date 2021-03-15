@@ -18,7 +18,7 @@
                 max-height: 65px
                 max-width: 65px
         .menu
-            li
+            &_item
                 padding: 0
                 a
                     padding: 5px
@@ -167,11 +167,138 @@
                 width: 130px
                 height: 35px
 
-/** @media (max-width: 768px)
+@media (max-width: 768px)
 
+    .header
+        padding: 25px 0 25px 0
+        height: 550px
+        &_logo
+            img
+                max-width: 55px
+                max-height: 55px
+        &_menu
+            .menu
+                position: fixed
+                display: flex
+                flex-direction: column
+                justify-content: space-around
+                align-items: center
+                top: 0
+                left: -100%
+                width: 50%
+                height: 100vh
+                padding: 20px 15px
+                z-index: 1
+                background-color: rgba(37,51,60,0.8)
+                transition: all 0.5s ease
+                &_item
+                    border: none
+                    a
+                        font-size: 14px
+                        padding: 10px
+                        
+            .menu_active
+                left: 0%
 
+            .feedback_number
+                display: none
 
+            .hamburger
+                display: block
+                width: 25px
+                height: 12px
+                span
+                    display: block
+                    width: 100%
+                    height: 2px
+                    background-color: #fff
+                    margin-bottom: 2px
+                    transition: all 0.5s ease
 
+            .hamburger_active
+                span
+                    margin-bottom: -2px
+                    &:nth-child(1)
+                        transform: translateY(3px) rotate(-45deg)
+                    &:nth-child(2)
+                        display: none
+                    &:nth-child(3)
+                        transform: translateY(3px) rotate(45deg)
+
+        &_wrapper
+            p
+                font-size: 16px 
+            h1
+                font-size: 32px
+    
+        &_subheader
+            font-size: 18px
+
+        &_ellipse::after
+            content: ""
+            background-color: #fff
+            width: 220px
+            height: 1px
+            position: absolute
+            right: 20px
+        &_ellipse::before
+            content: ""
+            background-color: #fff
+            width: 220px
+            height: 1px
+            position: absolute
+            left: 20px
+
+        &_icons
+            .icon_img
+                img
+                    max-height: 50px
+                    max-width: 50px
+            .icon_text
+                margin-top: 10px
+                font-size: 11px
+        .wrapper_btn
+            width: 130px
+            height: 40px
+            font-size: 11px
+        
+    .advantage_header
+        font-size: 20px
+    .work_header
+        font-size: 20px
+    .price_header
+        font-size: 20px
+    .system_header
+        font-size: 20px
+    .price_item
+        .item_btn
+            width: 130px
+            height: 40px
+    .price_consultation
+        .consultation_subheader
+            font-size: 20px
+        .consultation_btn
+            width: 150px
+            font-size: 12px
+            height: 40px
+            
+        .feedback_btn
+            width: 150px
+            height: 40px
+
+    .map_address
+        width: 273px
+
+    .footer_top
+        .footer_logo
+            img
+                max-height: 55px
+                max-width: 55px
+        .footer_text
+            font-size: 12px
+            margin-left: 40px
+        .footer_number
+            display: none
 
 
 /** @media (max-width:576px) 
