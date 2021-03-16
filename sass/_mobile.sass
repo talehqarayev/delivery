@@ -369,20 +369,38 @@
                 flex-direction: column
                 justify-content: center
                 align-items: center
+                margin-left: 0px
             &_text
                 text-align: center
     .advantage_header
         font-size: 15px
     .agency_subheader
-        font-size: 12px
+        font-size: 13px
+        width: 300px
+        margin: 10px auto 0
+        text-align: center
+
     .work_header
         font-size: 15px
+        margin-bottom: 0
+        &::after
+            content: ""
+            background-color: #ec644b
+            width: 150px
+            text-align: center
+            height: 1px
+            position: absolute
+            top: 45px
+            left: 50%
+            transform: translate(-50%,50%)
     .work_subheader
         font-size: 12px
     .work_item
         .item
             img
                 max-height: 250px
+                max-width: 250px
+            &_adds
                 max-width: 250px
     .price_header
         font-size: 15px
@@ -401,6 +419,9 @@
             font-size: 15px
     .manager_subheader
         font-size: 13px
+        width: 300px
+        margin: 10px auto 0
+        text-align: center
     textarea
         width: 300px
     .map
