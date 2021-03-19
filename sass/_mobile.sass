@@ -119,18 +119,21 @@
             width: 220px
     textarea
         width: 700px
-    
-    .footer_logo
-        img
-            max-width: 65px
-            max-height: 65px
-    .footer_text
-        margin-left: 20px
+    .footer_top
+        display: flex
+        align-content: center
+        justify-content: space-around
+        .footer_logo
+            img
+                max-width: 65px
+                max-height: 65px
+        .footer_text
+            margin-left: 20px
 
-    .footer_question
-        font-size: 13px
-    .footer_phone
-        font-size: 15px
+        .footer_question
+            font-size: 13px
+        .footer_phone
+            font-size: 15px
     .footer_btn
         width: 140px
         height: 40px
@@ -138,7 +141,7 @@
     .footer_wrapper
         display: flex
         align-items: center
-        justify-content: space-between
+        justify-content: space-around
     .footer_created
         display: flex
         align-items: center
@@ -455,6 +458,12 @@
         display: flex
         flex-direction: column
         align-items: center
+        .created_text
+            font-size: 12px
+            margin-right: 0px
+        .created_icon
+            max-width: 30px
+            max-height: 30px
     .footer_btn
         width: 125px
     .pageup
